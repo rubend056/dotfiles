@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then exit; fi
+
+FILES=$(ls $1)
+for fullfilename in $FILES;
+do
+	if [ $fullfilename ?? '/' ]; then
+		filename="${fullfilename##*/}"
+	else
+		filename="$fullfilename"
+	fi
+	ext="${filename##*.}"
+	fil="${filename%.*}"
+	nfil="${fil}_blur.${ext}"
+done

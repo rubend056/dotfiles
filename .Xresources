@@ -3,10 +3,13 @@ Xft.dpi: 90
 urxvt*scrollBar: false
 urxvt*scrollBar_right: true
 urxvt*scrollColor: #000000
+urxvt*scrollTtyOutput: false
+urxvt*scrollWithBuffer: true
+urxvt*scrollTtyKeypress: true
 urxvt*depth: 32
-urxvt.internalBorder: 4
-urxvt*background: [75]#101015
-urxvt*borderColor: [75]#101015
+urxvt.internalBorder: 0
+urxvt*background: [70]#101015
+urxvt*borderColor: [70]#101015
 urxvt*foreground: #b2b2b2
 
 urxvt*font: xft:UbuntuMono Nerd Font:pixelsize=18

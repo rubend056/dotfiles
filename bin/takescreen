@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+
+if [[ $1 = --full ]]; then
+	scrot --thumb 10 --multidisp --exec 'mv $m /tmp/ && mv $f ~/Pictures/screens && notify-send --icon /tmp/$m "Scrot Screenshot Taken" "$$(($s/1024)) KBytes\nOf Type $t\nSaved in ~/Pictures"'
+else
+	
+	scrot -u --thumb 10 --exec 'mv $m /tmp/ && mv $f ~/Pictures/screens && notify-send --icon /tmp/$m "Scrot Screenshot Taken" "$$(($s/1024)) KBytes\nOf Type $t\nSaved in ~/Pictures"'
+fi

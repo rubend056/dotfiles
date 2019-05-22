@@ -1,0 +1,1 @@
+/usr/bin/nano --linenumbers --nowrap --tabsize=4 $@
