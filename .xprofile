@@ -13,6 +13,7 @@ SSH_ENV="$HOME/.ssh/environment"
 
 export WINEPREFIX=~/wineprefix32
 
+export PATH=$PATH:~/bin
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.gem/ruby/2.4.0/bin
 export PATH=$PATH:~/.config/composer/vendor/bin
