@@ -1,0 +1,2 @@
+text=${1:-"p0"}
+echo ${@:2} >> ~/install/$text.txt
