@@ -1,0 +1,3 @@
+sudo systemctl stop ntpd
+sudo ntpdate pool.ntp.org
+#sudo systemctl start ntpd

@@ -1,0 +1,2 @@
+sudo date +%Y%m%d -s "20120418"
+sudo date +%T -s "09:14:00"

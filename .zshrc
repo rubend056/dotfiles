@@ -104,7 +104,7 @@ POWERLINE_BASH_SELECT=1
 
 #export DOTFILE_DIRS=""
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias config_update='config add install bin .config/Thunar .config/autorandr .config/compton .config/conky .config/dunst .config/i3 .config/polybar .config/walls .config/xfce4 .config/compton && config add -u && config commit -am "auto commit" && config push -u origin master'
+alias config_update='config add install bin .config/Thunar .config/autorandr .config/compton .config/conky .config/dunst .config/i3 .config/polybar .config/walls .config/compton && config add -u && config commit -am "auto commit" && config push -u origin master'
 
 # Set up Node Version Manager
 source /usr/share/nvm/init-nvm.sh
