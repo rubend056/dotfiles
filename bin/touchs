@@ -1,0 +1,2 @@
+nano ~/bin/$1
+chmod +x ~/bin/$1

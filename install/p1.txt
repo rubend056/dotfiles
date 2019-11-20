@@ -1,0 +1,22 @@
+i3
+xorg
+xorg-xinit
+mesa
+network-manager-applet
+lightdm lightdm-gtk-greeter
+
+dmenu rxvt-unicode firefox
+zsh
+htop
+powerline
+zsh-theme-powerlevel9k powerline-fonts
+gedit
+pulseaudio pulseaudio-alsa alsa
+pavucontrol
+thunar
+scrot
+
+xfce4 feh
+picom
+vlc dunst
+nomacs

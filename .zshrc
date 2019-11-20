@@ -100,8 +100,11 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/share/powerline/bindings/bash/powerline.sh
 
-source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
+
 
 #export DOTFILE_DIRS=""
-alias config='/usr/bin/git --git-dir=/home/rubend/.cfg/ --work-tree=/home/rubend'
-alias updateconfig='config add .config/Thunar .config/autorandr .config/compton .config/conky .config/dunst .config/i3 .config/polybar .config/walls .config/xfce4 .config/compton && config add -u && config commit -am "auto commit" && config push -u origin master'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config_update='config add install bin .config/Thunar .config/autorandr .config/compton .config/conky .config/dunst .config/i3 .config/polybar .config/walls .config/xfce4 .config/compton && config add -u && config commit -am "auto commit" && config push -u origin master'
+
+# Set up Node Version Manager
+source /usr/share/nvm/init-nvm.sh

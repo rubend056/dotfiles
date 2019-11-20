@@ -1,0 +1,8 @@
+
+nano networkmanager os-prober ntfs-3g
+fakeroot binutils
+gcc cmake
+make
+openssh
+which
+gvfs
