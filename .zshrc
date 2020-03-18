@@ -108,3 +108,9 @@ alias config_update='config add install bin .config/Thunar .config/autorandr .co
 
 # Set up Node Version Manager
 source /usr/share/nvm/init-nvm.sh
+
+###-tns-completion-start-###
+if [ -f /home/rubend/.tnsrc ]; then 
+    source /home/rubend/.tnsrc 
+fi
+###-tns-completion-end-###

@@ -1,0 +1,4 @@
+libreoffice-fresh
+okular
+qbittorrent
+thunar-archive-plugin thunar-media-tags-plugin thunar-volman
