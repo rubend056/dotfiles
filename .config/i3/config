@@ -300,11 +300,11 @@ bindsym --release Shift+Print exec --no-startup-id takescreen
 
 
 exec --no-startup-id "sleep 3; setwall"
-exec --no-startup-id picom -bc --config ~/.config/compton/config
+exec --no-startup-id picom -bc --config ~/.config/picom.conf
 exec --no-startup-id powerline-daemon -q
 exec --no-startup-id redshift -l 25.77427:-80.19366 -t 6500:4000
 exec nm-applet
-exec --no-startup-id xfsettingsd
+#exec --no-startup-id xfsettingsd
 #exec --no-startup-id dropbox
 exec --no-startup-id owncloud
 exec --no-startup-id dunst
