@@ -1,0 +1,2 @@
+mkdir ~/pc
+sshfs -p 8001 rubend@rdgs.duckdns.org:/home/rubend ~/pc

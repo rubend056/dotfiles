@@ -10,7 +10,7 @@
 
 ;***************************************
 [colors]
-background = #77000000
+background = #88000000
 foreground = #ffffff
 
 A100=#82b1ff
@@ -32,7 +32,7 @@ alert = ${self.alert}
 
 ;***************************************
 [global/wm]
-margin-top = 5
+margin-top = 0
 margin-bottom = 5
 
 ;***************************************
@@ -78,6 +78,11 @@ override-redirect = true
 
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
+
+;***************************************
+
+[bar/bottombar]
+
 
 ;***************************************
 [module/xwindow]
@@ -294,7 +299,7 @@ label-muted-foreground = #ff6200
 label-muted = ""
 
 bar-volume-width = 30
-bar-volume-gradient = false
+bar-volume-gradient = true
 bar-volume-indicator = |
 bar-volume-fill = -
 bar-volume-empty = -
