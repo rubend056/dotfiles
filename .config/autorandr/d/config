@@ -4,12 +4,14 @@ output HDMI-A-0
 off
 output DVI-D-0
 off
-output DisplayPort-1
+output DisplayPort-0
+crtc 0
 mode 1600x900
 pos 0x0
+primary
 rate 60.00
-output DisplayPort-0
+output DisplayPort-1
+crtc 1
 mode 1600x900
 pos 1600x0
-primary
 rate 60.00

@@ -30,6 +30,19 @@
     </property>
     <property name="DisplayPort-0" type="string" value="HP 20&quot;">
       <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="691b913fe3d15bca8d749dd7a18027a67712e76f"/>
+      <property name="Resolution" type="string" value="1600x900"/>
+      <property name="RefreshRate" type="double" value="60.000000"/>
+      <property name="Rotation" type="int" value="90"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DisplayPort-1" type="string" value="HP 20&quot;">
+      <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="81992c45506bd211b62516ffc4aa52e68c7ee41e"/>
       <property name="Resolution" type="string" value="1600x900"/>
       <property name="RefreshRate" type="double" value="60.000000"/>
@@ -41,12 +54,20 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="DisplayPort-1" type="string" value="HP 20&quot;">
+  </property>
+  <property name="Notify" type="bool" value="true"/>
+  <property name="AutoEnableProfiles" type="bool" value="true"/>
+  <property name="ActiveProfile" type="string" value="Default"/>
+  <property name="Schemes" type="empty">
+    <property name="Apply" type="string" value="Default"/>
+  </property>
+  <property name="Fallback" type="empty">
+    <property name="DisplayPort-0" type="string" value="HP 20&quot;">
       <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="691b913fe3d15bca8d749dd7a18027a67712e76f"/>
       <property name="Resolution" type="string" value="1600x900"/>
       <property name="RefreshRate" type="double" value="60.000000"/>
-      <property name="Rotation" type="int" value="0"/>
+      <property name="Rotation" type="int" value="90"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="true"/>
       <property name="Position" type="empty">
@@ -54,8 +75,18 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
+    <property name="DisplayPort-1" type="string" value="HP 20&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="81992c45506bd211b62516ffc4aa52e68c7ee41e"/>
+      <property name="Resolution" type="string" value="1600x900"/>
+      <property name="RefreshRate" type="double" value="60.000000"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1600"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
   </property>
-  <property name="Notify" type="bool" value="true"/>
-  <property name="AutoEnableProfiles" type="bool" value="true"/>
-  <property name="ActiveProfile" type="string" value="Default"/>
 </channel>

@@ -192,6 +192,7 @@ for_window [class="(?i)VirtualBox"] floating enable
 for_window [class="(?i)blueman"] floating enable
 for_window [class="(?i)pinentry"] floating enable
 for_window [class="(?i)nm-connection-editor"] floating enable
+for_window [instance="engine"] floating enable
 
 #for_window [instance="sun-awt-X11-XFramePeer"] floating enable
 for_window [instance="__scratchpad"] floating enable
@@ -315,4 +316,4 @@ exec_always --no-startup-id "sleep 3; $HOME/.config/polybar/launch.sh"
 
 
 # OWN CUSTOM SHORTCUTS
-bindsym Ctrl+$mod+p exec --no-startup-id firefox ~/Dropbox/FIU/2019Spring/AMH/presidents.png
+#bindsym Ctrl+$mod+p exec --no-startup-id firefox ~/Dropbox/FIU/2019Spring/AMH/presidents.png
