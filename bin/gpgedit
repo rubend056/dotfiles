@@ -161,7 +161,7 @@ def decrypt(cipherfile, plainfile, opts):
 def encrypt(plainfile, cipherfile, opts):
     """Encrypt plainfile using gpg and write the result to cipherfile
     """
-    cmd = ['gpg'] + list(opts) + ['--yes', '--output', cipherfile,
+    cmd = ['gpg'] + list(opts) + ['--yes', '--symmetric', '--output', cipherfile,
                                   '--', plainfile]
     exit_code = subprocess.call(cmd)
     if exit_code != 0:

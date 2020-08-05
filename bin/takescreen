@@ -1,10 +1,16 @@
 #!/bin/sh
 
-mkdir -p ~/Pictures/screens
+SAVE_IN='~/Pictures/screens'
+
+mkdir -p $SAVE_IN
 
 if [[ $1 = --full ]]; then
-	scrot --thumb 10 --multidisp --exec 'mv $m /tmp/ && mv $f ~/Pictures/screens && notify-send --icon /tmp/$m "Scrot Screenshot Taken" "$$(($s/1024)) KBytes\nOf Type $t\nSaved in ~/Pictures"'
+	. scrot --thumb 10 --multidisp --exec '_M=$m _F=$f _S=$s _T=$t'
 else
-	
-	scrot -u --thumb 10 --exec 'mv $m /tmp/ && mv $f ~/Pictures/screens && notify-send --icon /tmp/$m "Scrot Screenshot Taken" "$$(($s/1024)) KBytes\nOf Type $t\nSaved in ~/Pictures"'
+	. scrot -u --thumb 10 --exec '_M=$m _F=$f _S=$s _T=$t'
 fi
+
+mv $_M /tmp/
+mv $_F $SAVE_IN/
+notify-send --icon /tmp/$_M "Scrot Screenshot Taken" "$$(($_S/1024)) KBytes\nOf type $_T\nSaved in $SAVE_IN"
+xclip -sel clipboard -t image/png "$SAVE_IN/$_F"

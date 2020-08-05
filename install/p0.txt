@@ -6,3 +6,4 @@ make
 openssh
 which
 gvfs
+usbutils

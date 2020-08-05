@@ -11,7 +11,7 @@ sh ~/.fehbg &
 # SSH AGENT
 SSH_ENV="$HOME/.ssh/environment"
 
-export WINEPREFIX=~/wineprefix32
+export WINEPREFIX=~/.wine
 
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/.local/bin

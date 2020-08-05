@@ -13,10 +13,14 @@
 set $mod Mod4
 set $term urxvt
 
-exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
-exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
-exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Disable While Typing Enabled" 0
-exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.2
+exec --no-startup-id autorandr -l d
+
+exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
+exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Disable While Typing Enabled" 0
+exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.2
+exec_always --no-startup-id xinput map-to-output "HUION H420 Pad" DisplayPort-0
+exec_always --no-startup-id xinput map-to-output "HUION H420 Pen Pen (0)" DisplayPort-0
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo +5% #increase sound volume
@@ -294,18 +298,21 @@ bindsym Ctrl+Mod1+t exec --no-startup-id i3exit lock
 bindsym --release Print exec --no-startup-id takescreen --full
 bindsym --release Shift+Print exec --no-startup-id takescreen
 
-exec --no-startup-id setwall
-exec --no-startup-id picom -bc --config ~/.config/compton/config
+
+exec --no-startup-id "sleep 3; setwall"
+exec --no-startup-id picom -bc --config ~/.config/picom.conf
 exec --no-startup-id powerline-daemon -q
 exec --no-startup-id redshift -l 25.77427:-80.19366 -t 6500:4000
 exec nm-applet
+#exec --no-startup-id xfsettingsd
 #exec --no-startup-id dropbox
 exec --no-startup-id owncloud
 exec --no-startup-id dunst
 #exec --no-startup-id xrandr --dpi 165
 exec --no-startup-id /usr/bin/blueman-applet
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id "sleep 3; $HOME/.config/polybar/launch.sh"
+
 
 # OWN CUSTOM SHORTCUTS
 bindsym Ctrl+$mod+p exec --no-startup-id firefox ~/Dropbox/FIU/2019Spring/AMH/presidents.png

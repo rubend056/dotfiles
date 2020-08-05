@@ -9,11 +9,12 @@ urxvt*scrollTtyKeypress: true
 urxvt*depth: 32
 urxvt.saveLines: 5000
 urxvt.internalBorder: 0
-urxvt*background: [70]#101015
-urxvt*borderColor: [70]#101015
+urxvt*background: [90]#101015
+urxvt*borderColor: [90]#101015
 urxvt*foreground: #b2b2b2
 
 urxvt*font: xft:UbuntuMono Nerd Font:pixelsize=16
+
 URxvt.iso14755 : false
 URxvt.keysym.C-M-c: builtin-string:
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
