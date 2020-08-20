@@ -8,18 +8,21 @@
 	"git.autofetch": true,
 	"editor.renderWhitespace": "none",
 	"editor.trimAutoWhitespace": false,
-	"editor.fontFamily": "'Hack Nerd Font Mono'",
+	"editor.fontFamily": "'Fira Code'",
 	"editor.smoothScrolling": true,
 	"editor.tabCompletion": "on",
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
 	"explorer.autoReveal": false,
 	"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, UseTab: Always, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, ColumnLimit: 0}",
-	"editor.fontSize": 13,
 	"diffEditor.ignoreTrimWhitespace": false,
 	"workbench.colorTheme": "Tomorrow Night Blue",
 	"editor.minimap.enabled": false,
 	"files.associations": {
 		"*.json": "jsonc"
-	}
+	},
+	"editor.fontWeight": "500",
+	"workbench.activityBar.visible": false,
+	"editor.tabSize": 2,
+	"liveServer.settings.fullReload": true
 }

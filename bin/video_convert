@@ -1,0 +1,33 @@
+#!/bin/sh
+
+set -e
+
+if [ $# -lt 3 ]
+then
+	echo "video_covert <files> <folder>"
+	exit 1
+fi
+
+VIDEOS=("mov" "mkv")
+IMAGES=("jpeg" "cr2")
+
+for FILE in $1
+do 
+	BASE=$(basename -- "$FILE")
+	EXT="${BASE##*.}"
+	EXT="${EXT,,}"
+	FNAME="${BASE%.*}"
+	if [[ " ${VIDEOS[*]} " == *"$EXT"* ]]
+	then
+		ffmpeg -i $FILE "${2}/${FNAME}.mp4"
+	elif [[ " ${IMAGES[*]} " == *"$EXT"* ]]
+	then
+		convert $FILE \
+			-define tiff:exif-properties=true \
+		 	-statistic Median 5 \
+			-normalize \
+			-quality 90% \
+			"${2}/${FNAME}.jpg"
+	fi
+	sleep 1
+done

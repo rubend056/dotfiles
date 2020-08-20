@@ -9,6 +9,8 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+popup_during_fullscreen smart
+
 
 set $mod Mod4
 set $term urxvt
